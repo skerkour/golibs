@@ -47,3 +47,9 @@ func (si *SysInfo) GetSysInfo() {
 	si.getOSInfo()
 	si.getKernelInfo()
 }
+
+func GetOS() OS {
+	var si SysInfo
+	si.getOSInfo()
+	return si.OS
+}
