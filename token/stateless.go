@@ -6,8 +6,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/skerkour/bloom2/libs/crypto"
-	"github.com/skerkour/bloom2/libs/ulid"
+	"github.com/skerkour/libs/crypto"
+	"github.com/skerkour/libs/ulid"
 )
 
 const maxStatelessData = 128

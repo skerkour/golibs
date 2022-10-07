@@ -5,9 +5,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/skerkour/bloom2/libs/crypto"
-	"github.com/skerkour/bloom2/libs/token"
-	"github.com/skerkour/bloom2/libs/ulid"
+	"github.com/skerkour/libs/crypto"
+	"github.com/skerkour/libs/token"
+	"github.com/skerkour/libs/ulid"
 )
 
 func TestParseStateless(t *testing.T) {

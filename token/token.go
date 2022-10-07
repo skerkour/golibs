@@ -1,13 +1,12 @@
 package token
 
 import (
+	"errors"
 	"strings"
 
-	"github.com/skerkour/bloom2/domain/kernel"
-	"github.com/skerkour/bloom2/errs"
-	"github.com/skerkour/bloom2/libs/base32"
-	"github.com/skerkour/bloom2/libs/crypto"
-	"github.com/skerkour/bloom2/libs/ulid"
+	"github.com/skerkour/libs/base32"
+	"github.com/skerkour/libs/crypto"
+	"github.com/skerkour/libs/ulid"
 )
 
 const (
@@ -16,11 +15,11 @@ const (
 )
 
 var (
-	ErrTokenIsNotValid = errs.InvalidArgument("Token is not valid.")
-	ErrDataIsTooLong   = errs.InvalidArgument("data is too long.")
+	ErrTokenIsNotValid = errors.New("Token is not valid.")
+	ErrDataIsTooLong   = errors.New("data is too long.")
 )
 
-//TODO improve performance using arrays
+// TODO improve performance using arrays
 type Token struct {
 	id     ulid.ULID
 	secret []byte
@@ -53,7 +52,8 @@ func newSecret() (secret []byte, err error) {
 	secret, err = crypto.RandBytes(SecretSize)
 	if err != nil {
 		// TODO: log
-		err = errs.Internal("token: Generating secret", err)
+		// err = errs.Internal("token: Generating secret", err)
+		err = errors.New("token: Generating secret")
 		return
 	}
 	return
@@ -67,7 +67,8 @@ func new(prefix string, secret []byte) (token Token, err error) {
 	hash, err := crypto.DeriveKeyFromKey(secret, idBytes, HashSize)
 	if err != nil {
 		// TODO: log
-		err = errs.Internal("token: Hashing secret", err)
+		// err = errs.Internal("token: Hashing secret", err)
+		err = errors.New("token: Hashing secret")
 		return
 	}
 
@@ -111,7 +112,7 @@ func ParseWithPrefix(input, prefix string) (token Token, err error) {
 
 	if prefix != "" {
 		if !strings.HasPrefix(input, prefix) {
-			err = kernel.ErrTokenIsNotValid
+			err = ErrTokenIsNotValid
 			return
 		}
 		input = strings.TrimPrefix(input, prefix)
@@ -119,12 +120,12 @@ func ParseWithPrefix(input, prefix string) (token Token, err error) {
 
 	tokenBytes, err = base32.DecodeString(input)
 	if err != nil {
-		err = kernel.ErrTokenIsNotValid
+		err = ErrTokenIsNotValid
 		return
 	}
 
 	if len(tokenBytes) != ulid.Size+SecretSize {
-		err = kernel.ErrTokenIsNotValid
+		err = ErrTokenIsNotValid
 		return
 	}
 
@@ -133,14 +134,15 @@ func ParseWithPrefix(input, prefix string) (token Token, err error) {
 
 	token.id, err = ulid.ParseBytes(tokenIDBytes)
 	if err != nil {
-		err = kernel.ErrTokenIsNotValid
+		err = ErrTokenIsNotValid
 		return
 	}
 
 	token.hash, err = crypto.DeriveKeyFromKey(token.secret, tokenIDBytes, HashSize)
 	if err != nil {
 		// TODO: log
-		err = errs.Internal("token: Hashing secret", err)
+		// err = errs.Internal("token: Hashing secret", err)
+		err = errors.New("token: Hashing secret")
 		return
 	}
 
@@ -155,7 +157,7 @@ func (token *Token) Verify(hash []byte) (err error) {
 	// }
 
 	if !crypto.ConstantTimeCompare(hash, token.hash) {
-		err = kernel.ErrTokenIsNotValid
+		err = ErrTokenIsNotValid
 	}
 	return
 }
