@@ -6,7 +6,7 @@ import (
 	"net/url"
 	"time"
 
-	"github.com/google/uuid"
+	"github.com/skerkour/libs/uuid"
 )
 
 // Generates Atom feed as XML

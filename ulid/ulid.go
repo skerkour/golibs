@@ -7,8 +7,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/google/uuid"
 	"github.com/skerkour/libs/base32"
+	"github.com/skerkour/libs/uuid"
 )
 
 // TODO
