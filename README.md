@@ -24,5 +24,6 @@ $ cd cobra && rm -rf doc go.mod go.sum && cd ..
 
 `otp` is a fork of https://github.com/skerkour/libs/otp commit c62dc589378ae5c364d36819ddfb03fe391635ad - License: Apache 2.0
 
-
 `retry` is a fork of https://github.com/avast/retry-go commit 27363a141859f4031a7726c5bffcd670fb42d286 - License: MIT
+
+`sitemap` is a fork of https://github.com/snabb/sitemap commit ac70ad656cd7f36cc5623306806a3583707c9a56 - License: MIT
