@@ -14,4 +14,9 @@ $ cd cobra && rm -rf doc go.mod go.sum && cd ..
 
 `cors` is a fork of https://github.com/rs/cors commit fcebdb403f4d4585c705318c0e4d6d05a761a4ab - License: MIT
 
+`cron` is a fork of https://github.com/robfig/cron commit bc59245fe10efaed9d51b56900192527ed733435 - License: MIT
+
+`feeds` is a fork of https://github.com/jlelse/feeds commit 189f94254ad4b61b3b1908cf493f94390dc79870 - License: BSD 2-Clause
+
+
 `retry` is a fork of https://github.com/avast/retry-go commit 27363a141859f4031a7726c5bffcd670fb42d286 - License: MIT
