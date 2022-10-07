@@ -75,10 +75,10 @@ func (k *Key) String() string {
 	return k.orig
 }
 
-// Image returns an QR-Code image of the specified width and height,
+// QrCode returns an QR-Code image of the specified width and height,
 // suitable for use by many clients like Google-Authenricator
 // to enroll a user's TOTP/HOTP key.
-func (k *Key) Image(width int, height int) (image.Image, error) {
+func (k *Key) QrCode(width int, height int) (image.Image, error) {
 	b, err := qr.Encode(k.orig, qr.M, qr.Auto)
 	if err != nil {
 		return nil, err
