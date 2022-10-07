@@ -22,5 +22,7 @@ $ cd cobra && rm -rf doc go.mod go.sum && cd ..
 
 `imaging` is a fork of https://github.com/disintegration/imaging commit d40f48ce0f098c53ab1fcd6e0e402da682262da5 - License: MIT
 
+`otp` is a fork of https://github.com/skerkour/libs/otp commit c62dc589378ae5c364d36819ddfb03fe391635ad - License: Apache 2.0
+
 
 `retry` is a fork of https://github.com/avast/retry-go commit 27363a141859f4031a7726c5bffcd670fb42d286 - License: MIT
