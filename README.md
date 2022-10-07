@@ -27,3 +27,5 @@ $ cd cobra && rm -rf doc go.mod go.sum && cd ..
 `retry` is a fork of https://github.com/avast/retry-go commit 27363a141859f4031a7726c5bffcd670fb42d286 - License: MIT
 
 `sitemap` is a fork of https://github.com/snabb/sitemap commit ac70ad656cd7f36cc5623306806a3583707c9a56 - License: MIT
+
+`validate` is a fork of https://github.com/asaskevich/govalidator commit f21760c49a8d602d863493de796926d2a5c1138d - License: MIT
