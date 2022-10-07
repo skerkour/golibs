@@ -12,4 +12,6 @@ Go libraries that I reuse across my projects. NOT SAFE FOR PUBLIC USE ☢️
 $ cd cobra && rm -rf doc go.mod go.sum && cd ..
 ```
 
+`cors` is a fork of https://github.com/rs/cors commit fcebdb403f4d4585c705318c0e4d6d05a761a4ab - License: MIT
+
 `retry` is a fork of https://github.com/avast/retry-go commit 27363a141859f4031a7726c5bffcd670fb42d286 - License: MIT
