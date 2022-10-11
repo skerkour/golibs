@@ -16,6 +16,8 @@ func IsInBlocklist(email string) bool {
 	if blocklist == nil {
 		mailBlocklistFileReader := bytes.NewReader(BlocklistBytes)
 		mailBlocklistScanner := bufio.NewScanner(mailBlocklistFileReader)
+		blocklist := map[string]bool{}
+
 		for mailBlocklistScanner.Scan() {
 			blocklist[strings.TrimSpace(mailBlocklistScanner.Text())] = true
 		}
