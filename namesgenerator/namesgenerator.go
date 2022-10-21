@@ -9,7 +9,14 @@
 // controversy, but for now it will remain as-is.
 //
 // See also https://github.com/moby/moby/pull/43210#issuecomment-1029934277
-package namesgenerator // import "github.com/docker/docker/pkg/namesgenerator"
+// See also
+// - https://github.com/moby/moby/blob/master/pkg/namesgenerator/names-generator.go
+// - https://github.com/lucasepe/codename
+// - https://github.com/goombaio/namegenerator
+// - https://github.com/Pallinder/go-randomdata
+// - https://github.com/dustinkirkland/golang-petname
+// - https://github.com/cip8/autoname?ref=golangexample.com
+package namesgenerator
 
 import (
 	"math/rand"
