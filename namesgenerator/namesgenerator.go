@@ -24,7 +24,7 @@ import (
 )
 
 var (
-	left = [...]string{
+	left = []string{
 		"admiring",
 		"adoring",
 		"affectionate",
@@ -137,7 +137,7 @@ var (
 
 	// Docker, starting from 0.7.x, generates names from notable scientists and hackers.
 	// Please, for any amazing man that you add to the list, consider adding an equally amazing woman to it, and vice versa.
-	right = [...]string{
+	right = []string{
 		// Maria Gaetana Agnesi - Italian mathematician, philosopher, theologian and humanitarian. She was the first woman to write a mathematics handbook and the first woman appointed as a Mathematics Professor at a University. https://en.wikipedia.org/wiki/Maria_Gaetana_Agnesi
 		"agnesi",
 
