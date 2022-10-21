@@ -24,6 +24,8 @@ $ cd cobra && rm -rf doc go.mod go.sum && cd ..
 
 `migrate` is a fork of https://github.com/joncalhoun/migrate commit 34a9ee7d2b52f7b9f2261c2b6d9a8a0a83890a7f - License: MIT (see https://www.calhoun.io/database-migrations-in-go/)
 
+`namesgenerator` is a fork of https://github.com/moby/moby/blob/master/pkg/namesgenerator/names-generator.go commit 0f052eb4f56c05dcb8c444823ebde6ce0fac7197 - Licesne: Apache 2.0
+
 `otp` is a fork of https://github.com/skerkour/libs/otp commit c62dc589378ae5c364d36819ddfb03fe391635ad - License: Apache 2.0
 
 `retry` is a fork of https://github.com/avast/retry-go commit 27363a141859f4031a7726c5bffcd670fb42d286 - License: MIT
