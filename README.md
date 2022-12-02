@@ -39,3 +39,11 @@ $ cd cobra && rm -rf doc go.mod go.sum && cd ..
 `uuid` is a fork of https://github.com/google/uuid commit 44b5fee7c49cf3bcdf723f106b36d56ef13ccc88 - License: BSD-3 Clause
 
 `validate` is a fork of https://github.com/asaskevich/govalidator commit f21760c49a8d602d863493de796926d2a5c1138d - License: MIT
+
+
+## Maintenance
+
+```bash
+$ go get -u ./...
+$ go mod tidy
+```
