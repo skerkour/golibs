@@ -294,5 +294,5 @@ func DisableRandPool() {
 }
 
 func (uuid UUID) Equal(other UUID) bool {
-	return bytes.Equal(uuid[:], uuid[:])
+	return bytes.Equal(uuid[:], other[:])
 }
