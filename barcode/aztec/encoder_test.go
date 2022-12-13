@@ -4,7 +4,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/skerkour/libs/barcode/utils"
+	"github.com/skerkour/golibs/barcode/utils"
 )
 
 func Test_StuffBits(t *testing.T) {

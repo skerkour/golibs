@@ -5,7 +5,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/skerkour/libs/toml/internal"
+	"github.com/skerkour/golibs/toml/internal"
 )
 
 // Remove JSON tags to a data structure as returned by toml-test.

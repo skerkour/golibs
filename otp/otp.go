@@ -30,8 +30,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/skerkour/libs/barcode"
-	"github.com/skerkour/libs/barcode/qr"
+	"github.com/skerkour/golibs/barcode"
+	"github.com/skerkour/golibs/barcode/qr"
 )
 
 // Error when attempting to convert the secret from base32 to raw bytes.
@@ -195,7 +195,7 @@ type Algorithm int
 const (
 	// AlgorithmSHA1 should be used for compatibility with Google Authenticator.
 	//
-	// See https://github.com/skerkour/libs/otp/issues/55 for additional details.
+	// See https://github.com/skerkour/golibs/otp/issues/55 for additional details.
 	AlgorithmSHA1 Algorithm = iota
 	AlgorithmSHA256
 	AlgorithmSHA512

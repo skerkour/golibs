@@ -3,7 +3,7 @@ package aztec
 import (
 	"fmt"
 
-	"github.com/skerkour/libs/barcode/utils"
+	"github.com/skerkour/golibs/barcode/utils"
 )
 
 type encodingMode byte

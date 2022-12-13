@@ -14,7 +14,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/skerkour/libs/toml/internal"
+	"github.com/skerkour/golibs/toml/internal"
 )
 
 type tomlEncodeError struct{ error }

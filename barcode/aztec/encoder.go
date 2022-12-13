@@ -4,8 +4,8 @@ package aztec
 import (
 	"fmt"
 
-	"github.com/skerkour/libs/barcode"
-	"github.com/skerkour/libs/barcode/utils"
+	"github.com/skerkour/golibs/barcode"
+	"github.com/skerkour/golibs/barcode/utils"
 )
 
 const (

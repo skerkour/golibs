@@ -10,7 +10,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/skerkour/libs/retry"
+	"github.com/skerkour/golibs/retry"
 	"github.com/stretchr/testify/assert"
 )
 

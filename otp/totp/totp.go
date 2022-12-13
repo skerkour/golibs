@@ -20,8 +20,8 @@ package totp
 import (
 	"io"
 
-	"github.com/skerkour/libs/otp"
-	"github.com/skerkour/libs/otp/hotp"
+	"github.com/skerkour/golibs/otp"
+	"github.com/skerkour/golibs/otp/hotp"
 
 	"crypto/rand"
 	"encoding/base32"

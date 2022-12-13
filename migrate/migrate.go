@@ -7,8 +7,8 @@ import (
 	"fmt"
 	"sort"
 
-	"github.com/skerkour/libs/db"
-	"github.com/skerkour/libs/rz"
+	"github.com/skerkour/golibs/db"
+	"github.com/skerkour/golibs/rz"
 )
 
 type Migration struct {

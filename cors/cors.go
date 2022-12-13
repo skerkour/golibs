@@ -282,8 +282,8 @@ func (c *Cors) handlePreflight(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	// Always set Vary headers
-	// see https://github.com/skerkour/libs/cors/issues/10,
-	//     https://github.com/skerkour/libs/cors/commit/dbdca4d95feaa7511a46e6f1efb3b3aa505bc43f#commitcomment-12352001
+	// see https://github.com/skerkour/golibs/cors/issues/10,
+	//     https://github.com/skerkour/golibs/cors/commit/dbdca4d95feaa7511a46e6f1efb3b3aa505bc43f#commitcomment-12352001
 	headers.Add("Vary", "Origin")
 	headers.Add("Vary", "Access-Control-Request-Method")
 	headers.Add("Vary", "Access-Control-Request-Headers")
@@ -341,7 +341,7 @@ func (c *Cors) handleActualRequest(w http.ResponseWriter, r *http.Request) {
 	headers := w.Header()
 	origin := r.Header.Get("Origin")
 
-	// Always set Vary, see https://github.com/skerkour/libs/cors/issues/10
+	// Always set Vary, see https://github.com/skerkour/golibs/cors/issues/10
 	headers.Add("Vary", "Origin")
 	if origin == "" {
 		c.logf("  Actual request no headers added: missing origin")

@@ -3,7 +3,7 @@ package datamatrix
 import (
 	"strconv"
 
-	"github.com/skerkour/libs/barcode/utils"
+	"github.com/skerkour/golibs/barcode/utils"
 )
 
 type setValFunc func(byte)

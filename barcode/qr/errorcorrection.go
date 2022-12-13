@@ -1,7 +1,7 @@
 package qr
 
 import (
-	"github.com/skerkour/libs/barcode/utils"
+	"github.com/skerkour/golibs/barcode/utils"
 )
 
 type errorCorrection struct {

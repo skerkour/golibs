@@ -17,7 +17,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/skerkour/libs/toml"
+	"github.com/skerkour/golibs/toml"
 )
 
 type testType uint8

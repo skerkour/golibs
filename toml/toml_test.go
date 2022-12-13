@@ -13,9 +13,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/skerkour/libs/toml"
-	"github.com/skerkour/libs/toml/internal/tag"
-	tomltest "github.com/skerkour/libs/toml/internal/toml-test"
+	"github.com/skerkour/golibs/toml"
+	"github.com/skerkour/golibs/toml/internal/tag"
+	tomltest "github.com/skerkour/golibs/toml/internal/toml-test"
 )
 
 // Test if the error message matches what we want for invalid tests. Every slice
@@ -289,7 +289,7 @@ func TestToml(t *testing.T) {
 				// specification says that times *must* start with a leading
 				// zero, but this requires writing out own datetime parser.
 				// I think it's actually okay to just accept both really.
-				// https://github.com/skerkour/libs/toml/issues/320
+				// https://github.com/skerkour/golibs/toml/issues/320
 				"invalid/datetime/time-no-leads",
 
 				// This test is fine, just doesn't deal well with empty output.

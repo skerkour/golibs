@@ -12,8 +12,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/skerkour/libs/toml"
-	tomltest "github.com/skerkour/libs/toml/internal/toml-test"
+	"github.com/skerkour/golibs/toml"
+	tomltest "github.com/skerkour/golibs/toml/internal/toml-test"
 )
 
 func TestErrorPosition(t *testing.T) {

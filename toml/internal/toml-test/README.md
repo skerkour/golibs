@@ -27,13 +27,13 @@ your tests from breaking on changes to tests in this tool.
 To compile from source you will need Go 1.16 or newer (older versions will *not*
 work):
 
-    $ git clone https://github.com/skerkour/libs/toml-test.git
+    $ git clone https://github.com/skerkour/golibs/toml-test.git
     $ cd toml-test
     $ go build ./cmd/toml-test
 
 This will build a `./toml-test` binary.
 
-[r]: https://github.com/skerkour/libs/toml-test/releases
+[r]: https://github.com/skerkour/golibs/toml-test/releases
 
 Usage
 -----
@@ -49,8 +49,8 @@ decoder.
 For example, to run the tests against the Go TOML library:
 
     # Install my parser
-    $ go install github.com/skerkour/libs/toml/cmd/toml-test-decoder@master
-    $ go install github.com/skerkour/libs/toml/cmd/toml-test-encoder@master
+    $ go install github.com/skerkour/golibs/toml/cmd/toml-test-decoder@master
+    $ go install github.com/skerkour/golibs/toml/cmd/toml-test-encoder@master
 
     $ toml-test toml-test-decoder
     toml-test [toml-test-decoder]: using embeded tests: 278 passed
@@ -192,8 +192,8 @@ Note that the only JSON values ever used are objects, arrays and strings.
 
 An example implementation can be found in the BurnSushi/toml:
 
-- [Add tags](https://github.com/skerkour/libs/toml/blob/master/internal/tag/add.go)
-- [Remove tags](https://github.com/skerkour/libs/toml/blob/master/internal/tag/rm.go)
+- [Add tags](https://github.com/skerkour/golibs/toml/blob/master/internal/tag/add.go)
+- [Remove tags](https://github.com/skerkour/golibs/toml/blob/master/internal/tag/rm.go)
 
 Implementation-defined behaviour
 --------------------------------
@@ -217,7 +217,7 @@ The following are taken as ground truths by `toml-test`:
 - All expected outputs in `valid/test-name.json` are exactly correct.
 - The Go standard library package `encoding/json` decodes JSON correctly.
 - When testing encoders, the TOML decoder at
-  [github.com/skerkour/libs/toml/toml](https://github.com/skerkour/libs/toml) is assumed to be
+  [github.com/skerkour/golibs/toml/toml](https://github.com/skerkour/golibs/toml) is assumed to be
   correct. (Note that this assumption is not made when testing decoders!)
 
 Of particular note is that **no TOML decoder** is taken as ground truth when

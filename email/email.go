@@ -16,7 +16,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/skerkour/libs/crypto"
+	"github.com/skerkour/golibs/crypto"
 )
 
 const (

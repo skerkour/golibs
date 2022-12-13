@@ -660,7 +660,7 @@ func TestEncode32bit(t *testing.T) {
 
 // Skip invalid types if it has toml:"-"
 //
-// https://github.com/skerkour/libs/toml/issues/345
+// https://github.com/skerkour/golibs/toml/issues/345
 func TestEncodeSkipInvalidType(t *testing.T) {
 	buf := new(bytes.Buffer)
 	err := NewEncoder(buf).Encode(struct {

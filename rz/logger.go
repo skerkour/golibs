@@ -8,7 +8,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/skerkour/libs/rz/internal/json"
+	"github.com/skerkour/golibs/rz/internal/json"
 )
 
 // A Logger represents an active logging object that generates lines

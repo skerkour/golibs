@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/skerkour/libs/rz"
+	"github.com/skerkour/golibs/rz"
 )
 
 // Key to use when setting the request ID.

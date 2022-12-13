@@ -14,7 +14,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/skerkour/libs/toml/internal"
+	"github.com/skerkour/golibs/toml/internal"
 )
 
 func TestDecodeReader(t *testing.T) {

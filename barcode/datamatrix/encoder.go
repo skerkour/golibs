@@ -4,7 +4,7 @@ package datamatrix
 import (
 	"errors"
 
-	"github.com/skerkour/libs/barcode"
+	"github.com/skerkour/golibs/barcode"
 )
 
 // Encode returns a Datamatrix barcode for the given content

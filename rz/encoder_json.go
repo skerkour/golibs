@@ -4,7 +4,7 @@ package rz
 // JSON encoded byte stream.
 
 import (
-	"github.com/skerkour/libs/rz/internal/json"
+	"github.com/skerkour/golibs/rz/internal/json"
 )
 
 var (

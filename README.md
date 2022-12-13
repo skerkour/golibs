@@ -3,7 +3,7 @@ Go libraries that I reuse across my projects. NOT SAFE FOR PUBLIC USE ☢️
 ## Libs
 
 
-`barcode` is a fork of https://github.com/skerkour/libs/barcode commit 65580ac6e377baeeebd5bb702e15795ead22e48d - License: MIT
+`barcode` is a fork of https://github.com/skerkour/golibs/barcode commit 65580ac6e377baeeebd5bb702e15795ead22e48d - License: MIT
 
 
 `cobra` is a fork of https://github.com/spf13/cobra commit 212ea4078323771dc49b6f25a41d84efbaac3a4c to remove a lot of dependencies (`doc` directory deleted) - License: Apache 2.0
@@ -26,15 +26,15 @@ $ cd cobra && rm -rf doc go.mod go.sum && cd ..
 
 `namesgenerator` is a fork of https://github.com/moby/moby/blob/master/pkg/namesgenerator/names-generator.go commit 0f052eb4f56c05dcb8c444823ebde6ce0fac7197 - Licesne: Apache 2.0
 
-`otp` is a fork of https://github.com/skerkour/libs/otp commit c62dc589378ae5c364d36819ddfb03fe391635ad - License: Apache 2.0
+`otp` is a fork of https://github.com/skerkour/golibs/otp commit c62dc589378ae5c364d36819ddfb03fe391635ad - License: Apache 2.0
 
 `retry` is a fork of https://github.com/avast/retry-go commit 27363a141859f4031a7726c5bffcd670fb42d286 - License: MIT
 
 `sitemap` is a fork of https://github.com/snabb/sitemap commit ac70ad656cd7f36cc5623306806a3583707c9a56 - License: MIT
 
-`sysinfo` is a fork of https://github.com/skerkour/libs/sysinfo commit 99e836ba64f229922382eecd8a346e6b3d1b560a - License: MIT
+`sysinfo` is a fork of https://github.com/skerkour/golibs/sysinfo commit 99e836ba64f229922382eecd8a346e6b3d1b560a - License: MIT
 
-`toml` is a fork of https://github.com/skerkour/libs/toml commit 1ba7f5b05951c7331f4eefea9bce295e2cb141f2 - License: MIT
+`toml` is a fork of https://github.com/skerkour/golibs/toml commit 1ba7f5b05951c7331f4eefea9bce295e2cb141f2 - License: MIT
 
 `uuid` is a fork of https://github.com/google/uuid commit 44b5fee7c49cf3bcdf723f106b36d56ef13ccc88 - License: BSD-3 Clause
 

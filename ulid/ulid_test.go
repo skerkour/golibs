@@ -7,7 +7,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/skerkour/libs/ulid"
+	"github.com/skerkour/golibs/ulid"
 )
 
 func TestNew(t *testing.T) {

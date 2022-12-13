@@ -7,11 +7,11 @@ Cron V3 has been released!
 
 To download the specific tagged release, run:
 ```bash
-go get github.com/skerkour/libs/cron@v3.0.0
+go get github.com/skerkour/golibs/cron@v3.0.0
 ```
 Import it in your program as:
 ```go
-import "github.com/skerkour/libs/cron"
+import "github.com/skerkour/golibs/cron"
 ```
 It requires Go 1.11 or later due to usage of Go Modules.
 
@@ -33,7 +33,7 @@ the timezone support, and fixes a number of bugs.
 New features:
 
 - Support for Go modules. Callers must now import this library as
-  `github.com/skerkour/libs/cron`, instead of `gopkg.in/...`
+  `github.com/skerkour/golibs/cron`, instead of `gopkg.in/...`
 
 - Fixed bugs:
   - 0f01e6b parser: fix combining of Dow and Dom (#70)

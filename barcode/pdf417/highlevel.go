@@ -4,7 +4,7 @@ import (
 	"errors"
 	"math/big"
 
-	"github.com/skerkour/libs/barcode/utils"
+	"github.com/skerkour/golibs/barcode/utils"
 )
 
 type encodingMode byte

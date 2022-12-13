@@ -5,8 +5,8 @@ import (
 	"database/sql"
 	"fmt"
 
-	"github.com/skerkour/libs/crypto"
-	"github.com/skerkour/libs/db"
+	"github.com/skerkour/golibs/crypto"
+	"github.com/skerkour/golibs/db"
 	"golang.org/x/crypto/acme/autocert"
 )
 

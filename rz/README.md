@@ -7,9 +7,9 @@
 
 [Make logging great again](https://kerkour.com/blog/logging/)
 
-[![Go Reference](https://pkg.go.dev/badge/github.com/skerkour/libs/rz.svg)](https://pkg.go.dev/github.com/skerkour/libs/rz)
-<!-- [![GitHub release](https://img.shields.io/github/release/skerkour/rz.svg)](https://github.com/skerkour/libs/rz/releases) -->
-<!-- [![Coverage](http://gocover.io/_badge/github.com/skerkour/libs/rz)](http://gocover.io/github.com/skerkour/libs/rz) -->
+[![Go Reference](https://pkg.go.dev/badge/github.com/skerkour/golibs/rz.svg)](https://pkg.go.dev/github.com/skerkour/golibs/rz)
+<!-- [![GitHub release](https://img.shields.io/github/release/skerkour/rz.svg)](https://github.com/skerkour/golibs/rz/releases) -->
+<!-- [![Coverage](http://gocover.io/_badge/github.com/skerkour/golibs/rz)](http://gocover.io/github.com/skerkour/golibs/rz) -->
 
 ![Console logging](docs/example_screenshot.png)
 
@@ -23,7 +23,7 @@ API and even better [performance](#benchmarks).
 
 To keep the code base and the API simple, ripzap focuses on efficient structured logging only.
 Pretty logging on the console is made possible using the provided (but inefficient)
-[`Formatter`s](https://godoc.org/github.com/skerkour/libs/rz#LogFormatter).
+[`Formatter`s](https://godoc.org/github.com/skerkour/golibs/rz#LogFormatter).
 
 
 # Project status
@@ -55,8 +55,8 @@ package main
 import (
 	"os"
 
-	"github.com/skerkour/libs/rz"
-	"github.com/skerkour/libs/rz/log"
+	"github.com/skerkour/golibs/rz"
+	"github.com/skerkour/golibs/rz/log"
 )
 
 func main() {
@@ -165,13 +165,13 @@ var (
 
 ## HTTP Handler
 
-See the [skerkour/rz/rzhttp](https://godoc.org/github.com/skerkour/libs/rz/rzhttp) package or the
-[example here](https://github.com/skerkour/libs/rz/tree/master/examples/http).
+See the [skerkour/rz/rzhttp](https://godoc.org/github.com/skerkour/golibs/rz/rzhttp) package or the
+[example here](https://github.com/skerkour/golibs/rz/tree/master/examples/http).
 
 
 ## Examples
 
-See the [examples](https://github.com/skerkour/libs/rz/tree/master/examples) folder.
+See the [examples](https://github.com/skerkour/golibs/rz/tree/master/examples) folder.
 
 
 ## Benchmarks

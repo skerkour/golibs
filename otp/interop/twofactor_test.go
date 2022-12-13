@@ -22,8 +22,8 @@ import (
 	"time"
 
 	"github.com/gokyle/twofactor"
-	"github.com/skerkour/libs/otp"
-	"github.com/skerkour/libs/otp/totp"
+	"github.com/skerkour/golibs/otp"
+	"github.com/skerkour/golibs/otp/totp"
 	"github.com/stretchr/testify/require"
 )
 

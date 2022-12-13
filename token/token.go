@@ -5,10 +5,10 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/skerkour/libs/base32"
-	"github.com/skerkour/libs/crypto"
-	"github.com/skerkour/libs/ulid"
-	"github.com/skerkour/libs/uuid"
+	"github.com/skerkour/golibs/base32"
+	"github.com/skerkour/golibs/crypto"
+	"github.com/skerkour/golibs/ulid"
+	"github.com/skerkour/golibs/uuid"
 )
 
 const (

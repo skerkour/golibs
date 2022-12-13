@@ -13,7 +13,7 @@ import (
 	"log"
 	"os/user"
 
-	"github.com/skerkour/libs/sysinfo"
+	"github.com/skerkour/golibs/sysinfo"
 )
 
 func main() {

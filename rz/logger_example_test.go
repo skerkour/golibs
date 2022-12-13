@@ -1,7 +1,7 @@
 package rz_test
 
 import (
-	"github.com/skerkour/libs/rz"
+	"github.com/skerkour/golibs/rz"
 )
 
 func ExampleNew() {

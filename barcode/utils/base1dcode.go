@@ -5,7 +5,7 @@ import (
 	"image"
 	"image/color"
 
-	"github.com/skerkour/libs/barcode"
+	"github.com/skerkour/golibs/barcode"
 )
 
 type base1DCode struct {

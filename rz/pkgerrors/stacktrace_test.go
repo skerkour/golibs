@@ -6,7 +6,7 @@ import (
 	"testing"
 
 	"github.com/pkg/errors"
-	"github.com/skerkour/libs/rz"
+	"github.com/skerkour/golibs/rz"
 )
 
 func TestLogStack(t *testing.T) {

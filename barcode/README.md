@@ -27,8 +27,8 @@ import (
 	"image/png"
 	"os"
 
-	"github.com/skerkour/libs/barcode"
-	"github.com/skerkour/libs/barcode/qr"
+	"github.com/skerkour/golibs/barcode"
+	"github.com/skerkour/golibs/barcode/qr"
 )
 
 func main() {
@@ -48,6 +48,6 @@ func main() {
 ```
 
 ## Documentation ##
-See [GoDoc](https://godoc.org/github.com/skerkour/libs/barcode)
+See [GoDoc](https://godoc.org/github.com/skerkour/golibs/barcode)
 
 To create a barcode use the Encode function from one of the subpackages.

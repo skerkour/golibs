@@ -8,7 +8,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/skerkour/libs/toml"
+	"github.com/skerkour/golibs/toml"
 )
 
 type (

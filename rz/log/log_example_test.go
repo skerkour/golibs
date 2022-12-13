@@ -6,8 +6,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/skerkour/libs/rz"
-	"github.com/skerkour/libs/rz/log"
+	"github.com/skerkour/golibs/rz"
+	"github.com/skerkour/golibs/rz/log"
 )
 
 // setup would normally be an init() function, however, there seems

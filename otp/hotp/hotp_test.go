@@ -18,7 +18,7 @@
 package hotp
 
 import (
-	"github.com/skerkour/libs/otp"
+	"github.com/skerkour/golibs/otp"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 

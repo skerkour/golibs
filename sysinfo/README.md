@@ -1,9 +1,9 @@
 # Sysinfo
 
-[![Build Status](https://img.shields.io/github/workflow/status/zcalusic/sysinfo/Test)](https://github.com/skerkour/libs/sysinfo/actions/workflows/test.yaml)
-[![Go Report Card](https://goreportcard.com/badge/github.com/skerkour/libs/sysinfo)](https://goreportcard.com/report/github.com/skerkour/libs/sysinfo)
-[![GoDoc](https://godoc.org/github.com/skerkour/libs/sysinfo?status.svg)](https://godoc.org/github.com/skerkour/libs/sysinfo)
-[![License](https://img.shields.io/badge/license-MIT-a31f34.svg?maxAge=2592000)](https://github.com/skerkour/libs/sysinfo/blob/master/LICENSE)
+[![Build Status](https://img.shields.io/github/workflow/status/zcalusic/sysinfo/Test)](https://github.com/skerkour/golibs/sysinfo/actions/workflows/test.yaml)
+[![Go Report Card](https://goreportcard.com/badge/github.com/skerkour/golibs/sysinfo)](https://goreportcard.com/report/github.com/skerkour/golibs/sysinfo)
+[![GoDoc](https://godoc.org/github.com/skerkour/golibs/sysinfo?status.svg)](https://godoc.org/github.com/skerkour/golibs/sysinfo)
+[![License](https://img.shields.io/badge/license-MIT-a31f34.svg?maxAge=2592000)](https://github.com/skerkour/golibs/sysinfo/blob/master/LICENSE)
 [![Powered by](https://img.shields.io/badge/powered_by-Go-5272b4.svg?maxAge=2592000)](https://go.dev/)
 [![Platform](https://img.shields.io/badge/platform-Linux-009bde.svg?maxAge=2592000)](https://www.linuxfoundation.org/)
 
@@ -22,7 +22,7 @@ import (
 	"log"
 	"os/user"
 
-	"github.com/skerkour/libs/sysinfo"
+	"github.com/skerkour/golibs/sysinfo"
 )
 
 func main() {
@@ -77,7 +77,7 @@ It depends on Linux internals heavily, so there are no plans to support other op
 Just use go get.
 
 ```
-go get github.com/skerkour/libs/sysinfo
+go get github.com/skerkour/golibs/sysinfo
 ```
 
 There's also a very simple utility demonstrating sysinfo library capabilities. Start it (as superuser) to get pretty
@@ -85,7 +85,7 @@ formatted JSON output of all the info that sysinfo library provides. Due to its 
 utility also doubles down as an example of how to use the library.
 
 ```
-go get github.com/skerkour/libs/sysinfo/cmd/sysinfo
+go get github.com/skerkour/golibs/sysinfo/cmd/sysinfo
 ```
 
 --

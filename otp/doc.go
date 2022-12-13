@@ -27,7 +27,7 @@
 // Authenticator supports using a QR code as an enrollment method:
 //
 //	import (
-//		"github.com/skerkour/libs/otp/totp"
+//		"github.com/skerkour/golibs/otp/totp"
 //
 //		"bytes"
 //		"image/png"
@@ -58,7 +58,7 @@
 // Validating a TOTP passcode is very easy, just prompt the user for a passcode
 // and retrieve the associated user's previously stored secret.
 //
-//	import "github.com/skerkour/libs/otp/totp"
+//	import "github.com/skerkour/golibs/otp/totp"
 //
 //	passcode := promptForPasscode()
 //	secret := getSecret("alice@example.com")

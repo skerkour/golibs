@@ -2,7 +2,7 @@
 package log
 
 import (
-	"github.com/skerkour/libs/rz"
+	"github.com/skerkour/golibs/rz"
 )
 
 // logger is the global logger.

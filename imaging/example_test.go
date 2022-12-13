@@ -5,7 +5,7 @@ import (
 	"image/color"
 	"log"
 
-	"github.com/skerkour/libs/imaging"
+	"github.com/skerkour/golibs/imaging"
 )
 
 func Example() {

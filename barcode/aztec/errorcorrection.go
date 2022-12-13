@@ -1,7 +1,7 @@
 package aztec
 
 import (
-	"github.com/skerkour/libs/barcode/utils"
+	"github.com/skerkour/golibs/barcode/utils"
 )
 
 func bitsToWords(stuffedBits *utils.BitList, wordSize int, wordCount int) []int {

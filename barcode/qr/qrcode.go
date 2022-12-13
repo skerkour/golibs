@@ -5,8 +5,8 @@ import (
 	"image/color"
 	"math"
 
-	"github.com/skerkour/libs/barcode"
-	"github.com/skerkour/libs/barcode/utils"
+	"github.com/skerkour/golibs/barcode"
+	"github.com/skerkour/golibs/barcode/utils"
 )
 
 type qrcode struct {

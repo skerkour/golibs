@@ -1,4 +1,4 @@
-module github.com/skerkour/libs
+module github.com/skerkour/golibs
 
 go 1.19
 

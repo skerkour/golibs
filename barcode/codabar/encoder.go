@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"regexp"
 
-	"github.com/skerkour/libs/barcode"
-	"github.com/skerkour/libs/barcode/utils"
+	"github.com/skerkour/golibs/barcode"
+	"github.com/skerkour/golibs/barcode/utils"
 )
 
 var encodingTable = map[rune][]bool{

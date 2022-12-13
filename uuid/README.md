@@ -9,11 +9,11 @@ a UUID is a 16 byte array rather than a byte slice.  One loss due to this
 change is the ability to represent an invalid UUID (vs a NIL UUID).
 
 ###### Install
-`go get github.com/skerkour/libs/uuid`
+`go get github.com/skerkour/golibs/uuid`
 
 ###### Documentation
-[![GoDoc](https://godoc.org/github.com/skerkour/libs/uuid?status.svg)](http://godoc.org/github.com/skerkour/libs/uuid)
+[![GoDoc](https://godoc.org/github.com/skerkour/golibs/uuid?status.svg)](http://godoc.org/github.com/skerkour/golibs/uuid)
 
 Full `go doc` style documentation for the package can be viewed online without
 installing this package by using the GoDoc site here:
-http://pkg.go.dev/github.com/skerkour/libs/uuid
+http://pkg.go.dev/github.com/skerkour/golibs/uuid

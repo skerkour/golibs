@@ -5,7 +5,7 @@ import (
 	"math"
 	"time"
 
-	"github.com/skerkour/libs/toml/internal"
+	"github.com/skerkour/golibs/toml/internal"
 )
 
 // Add JSON tags to a data structure as expected by toml-test.

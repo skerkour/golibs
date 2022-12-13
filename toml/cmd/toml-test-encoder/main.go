@@ -9,8 +9,8 @@ import (
 	"os"
 	"path"
 
-	"github.com/skerkour/libs/toml"
-	"github.com/skerkour/libs/toml/internal/tag"
+	"github.com/skerkour/golibs/toml"
+	"github.com/skerkour/golibs/toml/internal/tag"
 )
 
 func init() {

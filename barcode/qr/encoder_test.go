@@ -6,7 +6,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/skerkour/libs/barcode"
+	"github.com/skerkour/golibs/barcode"
 )
 
 type test struct {
