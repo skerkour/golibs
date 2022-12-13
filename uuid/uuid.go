@@ -292,3 +292,7 @@ func DisableRandPool() {
 	poolMu.Lock()
 	poolPos = randPoolSize
 }
+
+func (uuid UUID) Equal(other UUID) bool {
+	return bytes.Equal(uuid[:], uuid[:])
+}
