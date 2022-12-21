@@ -15,15 +15,18 @@ import (
 	"sync"
 )
 
+const Size = 16
+
 // A UUID is a 128 bit (16 byte) Universal Unique IDentifier as defined in RFC
 // 4122.
-type UUID [16]byte
+type UUID [Size]byte
 
 // A Version represents a UUID's version.
 type Version byte
 
 // A Variant represents a UUID's variant.
 type Variant byte
+
 
 // Constants returned by Variant.
 const (

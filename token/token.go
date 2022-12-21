@@ -7,7 +7,6 @@ import (
 
 	"github.com/skerkour/golibs/base32"
 	"github.com/skerkour/golibs/crypto"
-	"github.com/skerkour/golibs/ulid"
 	"github.com/skerkour/golibs/uuid"
 )
 
@@ -121,13 +120,13 @@ func ParseWithPrefix(input, prefix string) (token Token, err error) {
 		return
 	}
 
-	if len(tokenBytes) != ulid.Size+SecretSize {
+	if len(tokenBytes) != uuid.Size+SecretSize {
 		err = ErrTokenIsNotValid
 		return
 	}
 
-	tokenIDBytes := tokenBytes[:ulid.Size]
-	token.secret = tokenBytes[ulid.Size:]
+	tokenIDBytes := tokenBytes[:uuid.Size]
+	token.secret = tokenBytes[uuid.Size:]
 
 	token.id, err = uuid.ParseBytes(tokenIDBytes)
 	if err != nil {

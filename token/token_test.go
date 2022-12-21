@@ -6,10 +6,10 @@ import (
 
 	"github.com/skerkour/golibs/crypto"
 	"github.com/skerkour/golibs/token"
-	"github.com/skerkour/golibs/ulid"
+	"github.com/skerkour/golibs/uuid"
 )
 
-var emptyUlid = make([]byte, ulid.Size)
+var emptyUUID = make([]byte, uuid.Size)
 var emptySecret = make([]byte, token.SecretSize)
 var emptyHash = make([]byte, token.HashSize)
 
@@ -20,7 +20,7 @@ func TestNew(t *testing.T) {
 	}
 
 	tokenIDByte, _ := newToken.ID().MarshalBinary()
-	if crypto.ConstantTimeCompare(tokenIDByte, emptyUlid) {
+	if crypto.ConstantTimeCompare(tokenIDByte, emptyUUID) {
 		t.Error("token.ID is empty")
 	}
 
