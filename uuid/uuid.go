@@ -27,7 +27,6 @@ type Version byte
 // A Variant represents a UUID's variant.
 type Variant byte
 
-
 // Constants returned by Variant.
 const (
 	Invalid   = Variant(iota) // Invalid UUID
@@ -117,6 +116,11 @@ func Parse(s string) (UUID, error) {
 // ParseBytes is like Parse, except it parses a byte slice instead of a string.
 func ParseBytes(b []byte) (UUID, error) {
 	var uuid UUID
+
+	if len(b) == Size {
+		return FromBytes(b)
+	}
+
 	switch len(b) {
 	case 36: // xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
 	case 36 + 9: // urn:uuid:xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
