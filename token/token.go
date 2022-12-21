@@ -128,7 +128,7 @@ func ParseWithPrefix(input, prefix string) (token Token, err error) {
 	tokenIDBytes := tokenBytes[:uuid.Size]
 	token.secret = tokenBytes[uuid.Size:]
 
-	token.id, err = uuid.ParseBytes(tokenIDBytes)
+	token.id, err = uuid.FromBytes(tokenIDBytes)
 	if err != nil {
 		err = ErrTokenIsNotValid
 		return

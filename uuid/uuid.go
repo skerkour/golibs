@@ -117,10 +117,6 @@ func Parse(s string) (UUID, error) {
 func ParseBytes(b []byte) (UUID, error) {
 	var uuid UUID
 
-	if len(b) == Size {
-		return FromBytes(b)
-	}
-
 	switch len(b) {
 	case 36: // xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
 	case 36 + 9: // urn:uuid:xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
